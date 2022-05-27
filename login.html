@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="CSS/login.css">
+</head>
+<body>
+	<button onclick="location.href='home.html';">Home</button>
+	<div align="center">
+	<div id="admin" align="center">
+		<h2><strong>Admin login</strong></h2>
+		<form name="admin_form" method="POST" action="adminlogin.jsp">
+			<div class="text">
+				<input type="text" name="admin_un" required>
+				<span></span>
+				<label>Username</label>
+			</div>
+			<div class="text">
+				<input type="password" name="admin_pwd" required>
+				<span></span>
+				<label>Password</label>
+			</div>
+			<div><input type="submit" name="admin_submit" value="login"></div>
+		</form>
+	</div>
+	</div>
+</body>
+</html>

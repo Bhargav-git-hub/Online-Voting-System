@@ -1,0 +1,57 @@
+input{
+	cursor: pointer;
+	margin: 20px;
+	border-color: black;
+	border-radius: 10px;
+	width: 200px;
+	height: 30px;
+	text-align: center;
+}
+label{
+	font-size: 17px;
+	font-family: sans-serif;
+	color: black;
+}
+button{
+	border-radius: 5px;
+	cursor: pointer;
+	border: 1px solid white;
+	width: 60px;
+	height: 30px;
+	background-color: transparent;
+	color: white;
+	font-size: 17px;
+}
+button:hover{
+	text-decoration: underline;
+}
+form{
+	text-align: center;
+	margin: 50px;
+	padding: 20px;
+	width: 450px;
+	opacity: 0.9;
+	background-color: #f6feff;
+	border-radius: 10px;
+	border: 1px solid white;
+}
+body{
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("login.jpg");
+	background-size: cover;
+}
+input[type="submit"]{
+	width: 120px;
+	height: 30px;
+	background-color: transparent;
+	border-radius: 10px;
+	border: 2px solid #adadad;
+	color: black;
+	font-size: 15px;
+}
+input[type="submit"]:hover{
+	background-color: lightcoral;
+	border-radius: 10px;
+	border: 1px solid red;
+	transition: .2s;
+	font-size: 17px;
+}

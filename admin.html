@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>admin page</title>
+	<link rel="stylesheet" type="text/css" href="CSS/admin.css">
+</head>
+<body>
+	<div id="head">
+		<h2 align="center">Government of India</h2>
+		<p align="right">copyright &#169; 2002 by Election Commission</p>
+	</div>
+	<div class="side_bar">
+		<div class="logo">
+			<p>Menu</p>
+		</div>
+		<div class="menu">
+			<ul>
+				<li><a href="addvoter.html">Add voter</a></li>
+				<li><a href="removevoter.html">Remove voter</a></li>
+				<li><a href="admcandidates.jsp">View candidates</a></li>
+				<li><a href="admvoterslist.jsp">View voters</a></li>
+				<li><a href="home.html">Log out</a></li>
+				<script type="text/javascript">
+					function preventBack() {
+						window.history.forward();
+					}
+					setTimeout("preventBack()",0);
+					window.onunload = function(){
+						null;
+					};
+				</script>
+			</ul>
+		</div>
+	</div>
+	<div class="button">
+		<button onclick="location.href='checkresults.jsp';">Check Results</button>
+		<button onclick="func()">Reset votes</button>
+	</div>
+	<script>
+		function func(){
+			var rs=confirm("This cannot be undone. Do you want to continue?");
+			if(rs==true){
+				location.href="resetvotes.jsp";
+			}
+		}
+	</script>
+</body>
+</html>
